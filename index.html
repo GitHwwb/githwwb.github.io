@@ -56,20 +56,17 @@ h3 {
 
 h1 {
 	font-size: 1.875rem;
-	margin-top: 1rem;
-	margin-bottom: 0.5rem;
+	margin-top: 1.875rem;
 }
 
 h2 {
 	font-size: 1.5rem;
-	margin-top: 0.75rem;
-	margin-bottom: 0.5rem;
+	margin-top: 1.5rem;
 }
 
 h3 {
 	font-size: 1.25rem;
-	margin-top: 0.75rem;
-	margin-bottom: 0.5rem;
+	margin-top: 1.25rem;
 }
 
 .source {
@@ -390,8 +387,8 @@ input[type="checkbox"] {
 }
 
 p {
-	margin-top: 0.25em;
-	margin-bottom: 0.25em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 }
 
 .image {
@@ -684,56 +681,35 @@ blockquote {
 	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
 }
 	
-  /* Override Notion-export margins for tighter spacing */
-  .page-body h1,
-  .page-body h2,
-  .page-body h3 {
-    margin: 0.75em 0 !important;
-  }
+/* Tighter vertical rhythm */
+h1, h2, h3 {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
 
-  .page-body p {
-    margin: 0.5em 0 !important;
-  }
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
 
-  .page-body ol,
-  .page-body ul {
-    margin: 0.5em 0 !important;
-  }
+ol, ul {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
 
-  .page-body blockquote {
-    margin: 0.75em 0 !important;
-  }
+blockquote {
+  margin: 0.75em 0;
+}
 
-  .page-body figure {
-    margin: 0.75em 0 !important;
-  }
+figure {
+  margin: 0.75em 0;
+}
 
-  /* Reduce global body padding */
-  body {
-    padding-top: 1em !important;
-    padding-bottom: 1em !important;
-  }</style></head><body>
-  <!-- New overrides to ensure they load last -->
-  <style>
-    /* Tighten all vertical spacing */
-    h1, h2, h3 {
-      margin: 0.75em 0 !important;
-    }
-    p {
-      margin: 0.5em 0 !important;
-    }
-    ol, ul {
-      margin: 0.5em 0 !important;
-    }
-    blockquote {
-      margin: 0.75em 0 !important;
-    }
-    figure {
-      margin: 0.75em 0 !important;
-    }
-  </style>
-
-  <!-- your existing header and page content follow… --><article id="1c8f069d-7ffa-8095-aca9-d56bd990bd92" class="page sans"><header>
+/* Pull body padding in a bit */
+body {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}</style></head><body><article id="1c8f069d-7ffa-8095-aca9-d56bd990bd92" class="page sans"><header>
   <!-- Page cover gradient -->
   <img class="page-cover-image"
        src="https://www.notion.so/images/page-cover/gradients_11.jpg"
