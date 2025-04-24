@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact – SafeRound</title>
+  <!-- include your existing <style> block here -->
+</head>
+<body>
+  <header>
+    <!-- copy your header with logo/title/gradient here -->
+  </header>
+  <div class="page-body">
+    <h2>Contact</h2>
+    <form id="contact-form" style="margin:0.5em 0;">
+      <!-- same form fields as before -->
+      <div style="margin-bottom:0.5em;">
+        <label for="name">Name:</label><br/>
+        <input type="text" id="name" name="Name" required style="width:100%; padding:0.4em;"/>
+      </div>
+      <div style="margin-bottom:0.5em;">
+        <label for="email">Your Email:</label><br/>
+        <input type="email" id="email" name="Email" required style="width:100%; padding:0.4em;"/>
+      </div>
+      <div style="margin-bottom:0.5em;">
+        <label for="message">Message:</label><br/>
+        <textarea id="message" name="Message" required style="width:100%; padding:0.4em;"></textarea>
+      </div>
+      <button type="submit" style="padding:0.4em 0.8em;">Send</button>
+    </form>
+  </div>
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const n = encodeURIComponent(this.name.value);
+      const m = encodeURIComponent(this.message.value);
+      const em = encodeURIComponent(this.email.value);
+      window.location.href = 
+        'mailto:saferound@protonmail.com'
+        + '?subject=' + n
+        + '&body=' + m + '%0A%0AFrom:%20' + em;
+    });
+  </script>
+</body>
+</html>
