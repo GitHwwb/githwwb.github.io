@@ -27,8 +27,8 @@
     body {
       line-height: 1.5;
       white-space: pre-wrap;
-      padding-top: 0.5em;
-      padding-bottom: 0.5em;
+      padding-top: 0.3em !important;
+      padding-bottom: 0.3em !important;
     }
     a,
     a.visited {
@@ -45,15 +45,14 @@
       letter-spacing: -0.01em;
       line-height: 1.2;
       font-weight: 600;
-      margin-bottom: 0;
-      margin-top: 0.5em;
-      margin-bottom: 0.5em;
+      margin-top: 0.3em !important;
+      margin-bottom: 0.3em !important;
     }
     .page-title {
       font-size: 2.5rem;
       font-weight: 700;
-      margin-top: 0;
-      margin-bottom: 0.5em;
+      margin-top: 0 !important;
+      margin-bottom: 0.3em !important;
     }
     h1 {
       font-size: 1.875rem;
@@ -75,13 +74,13 @@
       padding: 1rem;
     }
     figure {
-      margin: 0.5em 0;
+      margin: 0.3em 0 !important;
       page-break-inside: avoid;
     }
     figcaption {
       opacity: 0.5;
       font-size: 85%;
-      margin-top: 0.3em;
+      margin-top: 0.2em;
     }
     mark {
       background-color: transparent;
@@ -116,16 +115,16 @@
     .column-list {
       display: flex;
       justify-content: space-between;
-      margin: 0.5em 0;
+      margin: 0.3em 0 !important;
     }
     .column {
-      padding: 0 0.5em;
+      padding: 0 0.3em !important;
     }
     .column:first-child {
-      padding-left: 0;
+      padding-left: 0 !important;
     }
     .column:last-child {
-      padding-right: 0;
+      padding-right: 0 !important;
     }
     .table_of_contents-item {
       display: block;
@@ -171,12 +170,12 @@
     ol,
     ul {
       margin: 0;
-      margin-block-start: 0.3em;
-      margin-block-end: 0.3em;
+      margin-block-start: 0.2em !important;
+      margin-block-end: 0.2em !important;
     }
     li > ol:first-child,
     li > ul:first-child {
-      margin-block-start: 0.3em;
+      margin-block-start: 0.2em !important;
     }
     ul > li {
       list-style: disc;
@@ -228,8 +227,8 @@
       background: rgba(206, 205, 202, 0.5);
       border-radius: 3px;
       margin-right: 0.5em;
-      margin-top: 0.3em;
-      margin-bottom: 0.3em;
+      margin-top: 0.2em;
+      margin-bottom: 0.2em;
       white-space: nowrap;
     }
     .collection-title {
@@ -237,10 +236,10 @@
       margin-right: 1em;
     }
     .page-description {
-      margin-bottom: 1em;
+      margin-bottom: 0.5em !important;
     }
     .simple-table {
-      margin-top: 0.5em;
+      margin-top: 0.3em !important;
       font-size: 0.875rem;
       empty-cells: show;
     }
@@ -294,7 +293,7 @@
     }
     .page-header-icon {
       font-size: 3rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5em;
     }
     .page-header-icon-with-cover {
       margin-top: -0.72em;
@@ -304,7 +303,7 @@
       border-radius: 3px;
     }
     .link-to-page {
-      margin: 0.5em 0;
+      margin: 0.3em 0 !important;
       padding: 0;
       border: none;
       font-weight: 500;
@@ -322,12 +321,12 @@
       vertical-align: middle;
     }
     p {
-      margin-top: 0.3em;
-      margin-bottom: 0.3em;
+      margin-top: 0.2em !important;
+      margin-bottom: 0.2em !important;
     }
     .image {
       border: none;
-      margin: 0.5em 0;
+      margin: 0.3em 0 !important;
       padding: 0;
       border-radius: 0;
       text-align: center;
@@ -358,7 +357,7 @@
     }
     blockquote {
       font-size: 1.25em;
-      margin: 0.5em 0;
+      margin: 0.3em 0 !important;
       padding-left: 1em;
       border-left: 3px solid rgb(55, 53, 47);
     }
@@ -418,7 +417,7 @@
     .pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
     .pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
     .pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
-    .pdf:lang(ko-KR) .menu { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+    .pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
     .pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
     .pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
     .pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
