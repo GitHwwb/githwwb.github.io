@@ -709,7 +709,28 @@ blockquote {
   body {
     padding-top: 1em !important;
     padding-bottom: 1em !important;
-  }</style></head><body><article id="1c8f069d-7ffa-8095-aca9-d56bd990bd92" class="page sans"><header>
+  }</style></head><body>
+  <!-- New overrides to ensure they load last -->
+  <style>
+    /* Tighten all vertical spacing */
+    h1, h2, h3 {
+      margin: 0.75em 0 !important;
+    }
+    p {
+      margin: 0.5em 0 !important;
+    }
+    ol, ul {
+      margin: 0.5em 0 !important;
+    }
+    blockquote {
+      margin: 0.75em 0 !important;
+    }
+    figure {
+      margin: 0.75em 0 !important;
+    }
+  </style>
+
+  <!-- your existing header and page content follow… --><article id="1c8f069d-7ffa-8095-aca9-d56bd990bd92" class="page sans"><header>
   <!-- Page cover gradient -->
   <img class="page-cover-image"
        src="https://www.notion.so/images/page-cover/gradients_11.jpg"
